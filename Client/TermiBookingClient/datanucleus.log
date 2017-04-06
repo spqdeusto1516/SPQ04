@@ -1,0 +1,865 @@
+11:28:13,572 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+11:28:13,717 (main) DEBUG [DataNucleus.General] - Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/admcs/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+11:28:13,811 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+11:28:13,820 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+11:28:13,825 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar.
+11:28:13,850 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+11:28:13,875 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+11:28:13,881 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar.
+11:28:13,886 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+11:28:13,887 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+11:28:13,890 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar.
+11:28:13,910 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+11:28:13,921 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+11:28:13,954 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+11:28:14,042 (main) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+11:28:14,042 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+11:28:14,078 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.image.BufferedImage to : byte[],java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.io.Serializable to : java.lang.String,byte[],java.nio.ByteBuffer
+11:28:14,079 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Boolean to : java.lang.Character,java.lang.Integer
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Character to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Class to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Integer to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Long to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigDecimal to : java.lang.String,java.lang.Double,java.nio.ByteBuffer
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigInteger to : java.lang.String,java.nio.ByteBuffer,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URI to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URL to : java.lang.String
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Date to : java.lang.String,java.util.Date,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Time to : java.lang.String,java.util.Date,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Timestamp to : java.lang.String,java.util.Date,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Duration to : java.lang.String,java.lang.Double,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Instant to : java.sql.Timestamp,java.lang.String,java.util.Date,java.lang.Long
+11:28:14,080 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDate to : java.sql.Date,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDateTime to : java.sql.Timestamp,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.lang.String,java.util.Date,java.lang.Long
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.MonthDay to : int[],java.sql.Date,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetDateTime to : java.sql.Timestamp,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.String,java.lang.Long
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Period to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.YearMonth to : int[],java.sql.Date,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZonedDateTime to : java.sql.Timestamp,java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.BitSet to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Calendar to : java.sql.Timestamp,[Ljava.lang.Object;,java.lang.String,java.util.Date
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Currency to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Date to : java.lang.String,java.lang.Long
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Locale to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+11:28:14,081 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.UUID to : java.lang.String
+11:28:14,083 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+11:28:14,083 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.0.m1) para el API "JDO" utilisando el JRE "{2}"
+11:28:14,083 (main) DEBUG [DataNucleus.Enhancer] - DataNucleus Enhancer : Classpath
+11:28:14,083 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+11:28:14,083 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+11:28:14,084 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+11:28:14,085 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\TodosDatos\Eclipse\5.Simple_example_RMI_JDO\target\classes
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m1\datanucleus-core-5.1.0-m1.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m1\datanucleus-api-jdo-5.1.0-m1.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m1\datanucleus-rdbms-5.1.0-m1.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\admcs\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+11:28:14,086 (main) DEBUG [DataNucleus.Enhancer] - Reading fileListFile: C:\Users\admcs\AppData\Local\Temp\enhancer-6819738587069171779.flf
+11:28:14,088 (main) DEBUG [DataNucleus.Enhancer] - Enhancing classes
+11:28:14,096 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[es.deusto.client.Client, es.deusto.server.IServer, es.deusto.server.jdo.Main, es.deusto.server.jdo.Message, es.deusto.server.jdo.User, es.deusto.server.Server]" ...
+11:28:14,104 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /META-INF/package.jdo
+11:28:14,104 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /WEB-INF/package.jdo
+11:28:14,104 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /package.jdo
+11:28:14,105 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/package.jdo
+11:28:14,105 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es.jdo
+11:28:14,105 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/package.jdo
+11:28:14,106 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto.jdo
+11:28:14,106 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/package.jdo
+11:28:14,106 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client.jdo
+11:28:14,107 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/Client.jdo
+11:28:14,107 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.client.Client"
+11:28:14,107 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "es.deusto.client.Client" no tener Meta-Data
+11:28:14,107 (main) DEBUG [DataNucleus.MetaData] - La clase "es.deusto.client.Client" no tiene MetaData o annotaciones.
+11:28:14,108 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /META-INF/package.jdo
+11:28:14,108 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /WEB-INF/package.jdo
+11:28:14,108 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /package.jdo
+11:28:14,108 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/package.jdo
+11:28:14,108 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es.jdo
+11:28:14,109 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/deusto/package.jdo
+11:28:14,109 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/deusto.jdo
+11:28:14,109 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/deusto/server/package.jdo
+11:28:14,109 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/deusto/server.jdo
+11:28:14,109 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer" en /es/deusto/server/IServer.jdo
+11:28:14,110 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.IServer"
+11:28:14,110 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "es.deusto.server.IServer" no tener Meta-Data
+11:28:14,110 (main) DEBUG [DataNucleus.MetaData] - La clase "es.deusto.server.IServer" no tiene MetaData o annotaciones.
+11:28:14,111 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /META-INF/package.jdo
+11:28:14,111 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /WEB-INF/package.jdo
+11:28:14,111 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /package.jdo
+11:28:14,111 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/package.jdo
+11:28:14,111 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es.jdo
+11:28:14,112 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/package.jdo
+11:28:14,112 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto.jdo
+11:28:14,112 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/server/package.jdo
+11:28:14,113 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/server.jdo
+11:28:14,113 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/server/jdo/package.jdo
+11:28:14,113 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/server/jdo.jdo
+11:28:14,114 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main" en /es/deusto/server/jdo/Main.jdo
+11:28:14,114 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Main"
+11:28:14,114 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "es.deusto.server.jdo.Main" no tener Meta-Data
+11:28:14,114 (main) DEBUG [DataNucleus.MetaData] - La clase "es.deusto.server.jdo.Main" no tiene MetaData o annotaciones.
+11:28:14,173 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" tiene anotaciones de JDO y vamos a usarlas.
+11:28:14,174 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" tiene anotaciones de JDO y vamos a usarlas.
+11:28:14,192 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /META-INF/package.jdo
+11:28:14,192 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /WEB-INF/package.jdo
+11:28:14,193 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /package.jdo
+11:28:14,193 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/package.jdo
+11:28:14,193 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/package.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/package.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/Server.jdo
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.Server"
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "es.deusto.server.Server" no tener Meta-Data
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - La clase "es.deusto.server.Server" no tiene MetaData o annotaciones.
+11:28:14,194 (main) DEBUG [DataNucleus.MetaData] - Populación del MetaData ...
+11:28:14,195 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" : Populando Meta-Data
+11:28:14,195 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:14,195 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "text" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:14,195 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:14,197 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" : Populando Meta-Data
+11:28:14,197 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:14,198 (main) DEBUG [DataNucleus.MetaData] - Inicialisación del MetaData ...
+11:28:14,198 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" : Inicializando Meta-Data
+11:28:14,199 (main) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" : Inicializando Meta-Data
+11:28:14,200 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+11:28:14,202 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "es.deusto.server.jdo.Message" empezando ...
+11:28:14,215 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no implementa el interfaz "org.datanucleus.enhancement.Persistable"!
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnStateManager" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnFlags" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnFieldTypes" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnFieldNames" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnFieldFlags" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnReplaceField" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetStateManager" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsTransactional" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnNewInstance" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnNewInstance" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnSuperClone" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnProvideFields" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "___dn$loadClass" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsDirty" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnReplaceFlags" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsDetached" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnMakeDirty" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsDeleted" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnProvideField" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnPreSerialize" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetObjectId" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetVersion" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsNew" pero lo necesita
+11:28:14,216 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyField" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnCopyFields" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnIsPersistent" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "dnReplaceFields" pero lo necesita
+11:28:14,217 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.Message" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+11:28:14,222 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancement.Persistable
+11:28:14,225 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.Message.user"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.Message.text"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.Message.text"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.Message.timestamp"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.getUser, cambiando el uso del campo "es.deusto.server.jdo.Message.user" para utilisar "dnGetuser()"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.setUser, cambiando el uso del campo "es.deusto.server.jdo.Message.user" para utilisar "dnSetuser()"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.toString, cambiando el uso del campo "es.deusto.server.jdo.Message.text" para utilisar "dnGettext()"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.Message.toString, cambiando el uso del campo "es.deusto.server.jdo.Message.timestamp" para utilisar "dnGettimestamp()"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.enhancement.StateManager dnStateManager"
+11:28:14,226 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+11:28:14,227 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+11:28:14,228 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "es.deusto.server.jdo.Message()"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldConsumer fc, java.lang.Object oid)"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(java.lang.Object oid)"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(java.lang.Object oid)"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldSupplier fs, java.lang.Object oid)"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+11:28:14,229 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+11:28:14,230 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+11:28:14,230 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.ExecutionContextReference dnGetExecutionContext()"
+11:28:14,230 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.StateManager dnGetStateManager()"
+11:28:14,230 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+11:28:14,230 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(java.lang.String fieldName)"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(java.lang.Object key)"
+11:28:14,231 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields([I indices)"
+11:28:14,232 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields([I indices)"
+11:28:14,232 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+11:28:14,232 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(org.datanucleus.enhancement.StateManager sm)"
+11:28:14,232 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+11:28:14,232 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm)"
+11:28:14,233 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm, java.lang.Object obj)"
+11:28:14,233 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+11:28:14,233 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+11:28:14,233 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(es.deusto.server.jdo.Message obj, int index)"
+11:28:14,233 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(java.lang.Object obj, [I indices)"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+11:28:14,234 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(java.lang.String className)"
+11:28:14,235 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+11:28:14,235 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGettext(es.deusto.server.jdo.Message objPC)"
+11:28:14,235 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSettext(es.deusto.server.jdo.Message objPC, java.lang.String val)"
+11:28:14,235 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "long dnGettimestamp(es.deusto.server.jdo.Message objPC)"
+11:28:14,235 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSettimestamp(es.deusto.server.jdo.Message objPC, long val)"
+11:28:14,236 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "es.deusto.server.jdo.User dnGetuser(es.deusto.server.jdo.Message objPC)"
+11:28:14,236 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetuser(es.deusto.server.jdo.Message objPC, es.deusto.server.jdo.User val)"
+11:28:14,237 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\TodosDatos\Eclipse\5.Simple_example_RMI_JDO\target\classes\es\deusto\server\jdo\Message.class" con definicion enhanced
+11:28:14,242 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.server.jdo.Message
+11:28:14,242 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "es.deusto.server.jdo.Message" ha terminado
+11:28:14,242 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "es.deusto.server.jdo.User" empezando ...
+11:28:14,242 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no implementa el interfaz "org.datanucleus.enhancement.Persistable"!
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnStateManager" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnFlags" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnFieldTypes" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnFieldNames" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnFieldFlags" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnReplaceField" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetStateManager" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsTransactional" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnNewInstance" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnNewInstance" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnSuperClone" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnProvideFields" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "___dn$loadClass" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsDirty" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnReplaceFlags" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsDetached" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnMakeDirty" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsDeleted" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnProvideField" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnPreSerialize" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetObjectId" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetVersion" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsNew" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyField" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+11:28:14,243 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnCopyFields" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnIsPersistent" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "dnReplaceFields" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - La clase "es.deusto.server.jdo.User" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancement.Persistable
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.User.login"
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.User.password"
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.User.messages"
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.User.login"
+11:28:14,244 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.<init> : ignorando enhance de set del campo "es.deusto.server.jdo.User.password"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.addMessage, cambiando el uso del campo "es.deusto.server.jdo.User.messages" para utilisar "dnGetmessages()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.removeMessage, cambiando el uso del campo "es.deusto.server.jdo.User.messages" para utilisar "dnGetmessages()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.getLogin, cambiando el uso del campo "es.deusto.server.jdo.User.login" para utilisar "dnGetlogin()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.getPassword, cambiando el uso del campo "es.deusto.server.jdo.User.password" para utilisar "dnGetpassword()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.setPassword, cambiando el uso del campo "es.deusto.server.jdo.User.password" para utilisar "dnSetpassword()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.getMessages, cambiando el uso del campo "es.deusto.server.jdo.User.messages" para utilisar "dnGetmessages()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.toString, cambiando el uso del campo "es.deusto.server.jdo.User.messages" para utilisar "dnGetmessages()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.toString, cambiando el uso del campo "es.deusto.server.jdo.User.login" para utilisar "dnGetlogin()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original es.deusto.server.jdo.User.toString, cambiando el uso del campo "es.deusto.server.jdo.User.password" para utilisar "dnGetpassword()"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.enhancement.StateManager dnStateManager"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+11:28:14,245 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "es.deusto.server.jdo.User()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldConsumer fc, java.lang.Object oid)"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(java.lang.Object oid)"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(java.lang.Object oid)"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(org.datanucleus.enhancement.Persistable$ObjectIdFieldSupplier fs, java.lang.Object oid)"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.ExecutionContextReference dnGetExecutionContext()"
+11:28:14,246 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.StateManager dnGetStateManager()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(java.lang.String fieldName)"
+11:28:14,247 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(java.lang.Object key)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields([I indices)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields([I indices)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(org.datanucleus.enhancement.StateManager sm)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancement.Persistable dnNewInstance(org.datanucleus.enhancement.StateManager sm, java.lang.Object obj)"
+11:28:14,248 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(es.deusto.server.jdo.User obj, int index)"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(java.lang.Object obj, [I indices)"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(java.lang.String className)"
+11:28:14,249 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetlogin(es.deusto.server.jdo.User objPC)"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlogin(es.deusto.server.jdo.User objPC, java.lang.String val)"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.Set dnGetmessages(es.deusto.server.jdo.User objPC)"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetmessages(es.deusto.server.jdo.User objPC, java.util.Set val)"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetpassword(es.deusto.server.jdo.User objPC)"
+11:28:14,250 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetpassword(es.deusto.server.jdo.User objPC, java.lang.String val)"
+11:28:14,251 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\TodosDatos\Eclipse\5.Simple_example_RMI_JDO\target\classes\es\deusto\server\jdo\User.class" con definicion enhanced
+11:28:14,257 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : es.deusto.server.jdo.User
+11:28:14,257 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "es.deusto.server.jdo.User" ha terminado
+11:28:14,258 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 2 clases. Tiempos : input=112 ms, enhance=57 ms, total=169 ms. Compruebe el LOG para los detalles
+11:28:26,614 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+11:28:26,649 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar.
+11:28:26,686 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+11:28:26,731 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m1/datanucleus-core-5.1.0-m1.jar!/plugin.xml.
+11:28:26,737 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar.
+11:28:26,745 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+11:28:26,747 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m1/datanucleus-api-jdo-5.1.0-m1.jar!/plugin.xml.
+11:28:26,750 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 5.1.0.m1 at URL file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar.
+11:28:26,771 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+11:28:26,783 (es.deusto.server.Server.main()) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/admcs/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m1/datanucleus-rdbms-5.1.0-m1.jar!/plugin.xml.
+11:28:26,809 (es.deusto.server.Server.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.metadata.validate desconocida - vamos a ignorarla
+11:28:26,822 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+11:28:26,902 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+11:28:26,902 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+11:28:26,977 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+11:28:26,978 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.io.Serializable to : java.nio.ByteBuffer,java.lang.String,byte[]
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Boolean to : java.lang.Character,java.lang.Integer
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Character to : java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Class to : java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Integer to : java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Long to : java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+11:28:26,979 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.nio.ByteBuffer,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigInteger to : java.nio.ByteBuffer,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URI to : java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URL to : java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Duration to : java.lang.Double,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Instant to : java.util.Date,java.lang.Long,java.lang.String,java.sql.Timestamp
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.sql.Date,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.Long,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.MonthDay to : java.util.Date,int[],java.sql.Date,java.lang.String
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+11:28:26,980 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.Long,java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Period to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.Year to : java.lang.String,java.lang.Integer
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.YearMonth to : java.util.Date,int[],java.sql.Date,java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.BitSet to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Calendar to : java.util.Date,[Ljava.lang.Object;,java.lang.String,java.sql.Timestamp
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Currency to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Locale to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+11:28:26,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.UUID to : java.lang.String
+11:28:26,982 (es.deusto.server.Server.main()) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery) mapping-name=mysql, JDO-listener=true
+11:28:26,982 (es.deusto.server.Server.main()) DEBUG [DataNucleus.MetaData] - Registering listener for metadata initialisation
+11:28:26,993 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Creating StoreManager for datastore
+11:28:27,207 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - Hemos creado tx data source con pool tipo dbcp2-builtin
+11:28:27,207 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones transaccionales bajo el nombre "rdbms/tx"
+11:28:27,207 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - Registrado la factoria de connecciones nontransaccionales bajo el nombre "rdbms/nontx"
+11:28:27,230 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - Hemos creado nontx data source con pool tipo dbcp2-builtin
+11:28:27,543 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@43ac5a7e [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto
+11:28:27,586 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
+11:28:27,587 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,587 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
+11:28:27,588 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+11:28:27,589 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+11:28:27,590 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
+11:28:27,590 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+11:28:27,590 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
+11:28:27,591 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+11:28:27,591 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
+11:28:27,592 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+11:28:27,593 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
+11:28:27,593 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
+11:28:27,593 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
+11:28:27,593 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+11:28:27,594 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,595 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+11:28:27,596 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+11:28:27,597 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
+11:28:27,599 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+11:28:27,601 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+11:28:27,601 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+11:28:27,601 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
+11:28:27,601 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+11:28:27,601 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+11:28:27,603 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
+11:28:27,603 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
+11:28:27,603 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
+11:28:27,603 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+11:28:27,603 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
+11:28:27,604 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
+11:28:27,604 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+11:28:27,605 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,605 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+11:28:27,605 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+11:28:27,606 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
+11:28:27,607 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
+11:28:27,609 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
+11:28:27,609 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
+11:28:27,610 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
+11:28:27,611 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java java.io.File (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BinaryStreamRDBMSMapping, default=true)
+11:28:27,611 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
+11:28:27,611 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
+11:28:27,612 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
+11:28:27,612 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
+11:28:27,612 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
+11:28:27,626 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL)
+11:28:27,626 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
+11:28:27,626 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
+11:28:27,626 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - No Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
+11:28:27,651 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - La columna "`DELETEME1491470907644`.`UNUSED`" añadió a la representación de la table.
+11:28:27,655 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `DELETEME1491470907644`
+11:28:27,657 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `DELETEME1491470907644`
+(
+    `UNUSED` INTEGER NOT NULL
+) ENGINE=INNODB
+11:28:27,737 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 79 ms
+11:28:27,772 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - No era posible determinar el nombre del esquema por este DataStore
+11:28:27,772 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - Borrar la tabla `DELETEME1491470907644`
+11:28:27,772 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - DROP TABLE `DELETEME1491470907644` CASCADE
+11:28:27,867 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 95 ms
+11:28:27,868 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - ======================= Datastore =========================
+11:28:27,868 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
+11:28:27,868 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore : read-write
+11:28:27,868 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
+11:28:27,868 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Schema : NamingFactory=datanucleus2 identifierCase=null
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Queries : Timeout=0
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - ===========================================================
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore : name="MySQL" version="5.7.15"
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.41 ( Revision: 83c6dc41b96809df81444362933043b20a1d49d5 )"
+11:28:27,869 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Primary Connection Factory : URL[jdbc:mysql://localhost/messagesDB?verifyServerCertificate=false&useSSL=true]
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Secondary Connection Factory : URL[jdbc:mysql://localhost/messagesDB?verifyServerCertificate=false&useSSL=true]
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=messagesDB
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Supported Identifier Cases : lowercase "lowercase" "UPPERCASE" 
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Support for Identifiers in DDL : catalog=true schema=false
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
+11:28:27,870 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Support Statement Batching : yes (max-batch-size=50)
+11:28:27,871 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Queries : Results direction=forward, type=forward-only, concurrency=read-only
+11:28:27,871 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - Java-Types : string-default-length=255
+11:28:27,871 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - JDBC-Types : VARCHAR, LONGVARCHAR, BINARY, VARBINARY, LONGVARBINARY, BIGINT, TINYINT, BIT, CHAR, NUMERIC, DECIMAL, INTEGER, CLOB, SMALLINT, BLOB, FLOAT, DOUBLE, DATE, TIME, TIMESTAMP
+11:28:27,871 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - ===========================================================
+11:28:27,871 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@43ac5a7e [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@623619f2, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
+11:28:27,875 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Datastore] - StoreManager now created
+11:28:27,880 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Cache] - Cache de nivel 2 del tipo "soft" inicializada
+11:28:27,883 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Started pool of ExecutionContext (maxPool=20, reaperThread=false)
+11:28:27,899 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - ================= NucleusContext ===============
+11:28:27,899 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - DataNucleus Context : Versión: "5.1.0.m1" con JRE "1.8.0_40" en "Windows 8.1"
+11:28:27,899 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Persistence API : JDO
+11:28:27,899 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
+11:28:27,899 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - ClassLoading : default
+11:28:27,900 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Paris
+11:28:27,900 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
+11:28:27,900 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - ValueGeneration : txn-isolation=read-committed connection=New
+11:28:27,900 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
+11:28:27,900 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - ================================================
+11:28:27,967 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Persistence] - ExecutionContext "org.datanucleus.ExecutionContextImpl@33c9a726" se abrió para la base de datos "org.datanucleus.store.rdbms.RDBMSStoreManager@40453cdd" con transaccion="org.datanucleus.TransactionImpl@5598ad8"
+11:28:27,981 (es.deusto.server.Server.main()) DEBUG [DataNucleus.Cache] - Cache de nivel 1 del tipo "soft" inicializada
+11:28:44,516 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=1238544558-1, enlisted resources=[]]
+11:28:44,516 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transacción empezada para el ExecutionContext org.datanucleus.ExecutionContextImpl@33c9a726 (optimistic=false)
+11:28:44,524 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /META-INF/package.jdo
+11:28:44,528 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /WEB-INF/package.jdo
+11:28:44,529 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /package.jdo
+11:28:44,530 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/package.jdo
+11:28:44,531 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es.jdo
+11:28:44,532 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/package.jdo
+11:28:44,534 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto.jdo
+11:28:44,535 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/package.jdo
+11:28:44,536 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/server.jdo
+11:28:44,536 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo/package.jdo
+11:28:44,537 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo.jdo
+11:28:44,538 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo/User.jdo
+11:28:44,538 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.User"
+11:28:44,722 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" tiene anotaciones de JDO y vamos a usarlas.
+11:28:44,766 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" : Populando Meta-Data
+11:28:44,767 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /META-INF/package-mysql.orm
+11:28:44,768 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /WEB-INF/package-mysql.orm
+11:28:44,768 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /package-mysql.orm
+11:28:44,768 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/package-mysql.orm
+11:28:44,769 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es-mysql.orm
+11:28:44,769 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/package-mysql.orm
+11:28:44,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto-mysql.orm
+11:28:44,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/package-mysql.orm
+11:28:44,771 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/server-mysql.orm
+11:28:44,771 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo/package-mysql.orm
+11:28:44,771 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo-mysql.orm
+11:28:44,772 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User" en /es/deusto/server/jdo/User-mysql.orm
+11:28:44,772 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.User"
+11:28:44,772 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:44,775 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /META-INF/package.jdo
+11:28:44,775 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /WEB-INF/package.jdo
+11:28:44,775 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /package.jdo
+11:28:44,775 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/package.jdo
+11:28:44,776 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es.jdo
+11:28:44,776 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/package.jdo
+11:28:44,776 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto.jdo
+11:28:44,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/package.jdo
+11:28:44,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server.jdo
+11:28:44,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo/package.jdo
+11:28:44,778 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo.jdo
+11:28:44,778 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo/Message.jdo
+11:28:44,778 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.jdo.Message"
+11:28:44,778 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" tiene anotaciones de JDO y vamos a usarlas.
+11:28:44,779 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" : Populando Meta-Data
+11:28:44,779 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /META-INF/package-mysql.orm
+11:28:44,779 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /WEB-INF/package-mysql.orm
+11:28:44,779 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /package-mysql.orm
+11:28:44,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/package-mysql.orm
+11:28:44,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es-mysql.orm
+11:28:44,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/package-mysql.orm
+11:28:44,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto-mysql.orm
+11:28:44,781 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/package-mysql.orm
+11:28:44,781 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server-mysql.orm
+11:28:44,781 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo/package-mysql.orm
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo-mysql.orm
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message" en /es/deusto/server/jdo/Message-mysql.orm
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "orm" por la clase "es.deusto.server.jdo.Message"
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "text" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:44,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:44,784 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.Message" : Inicializando Meta-Data
+11:28:44,785 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Clase "es.deusto.server.jdo.User" : Inicializando Meta-Data
+11:28:44,802 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Va a manjejar la persistencia de Clase : es.deusto.server.jdo.Message [Tabla : `MESSAGE`, Estrategia de heredar : new-table]
+11:28:44,803 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`MESSAGE`.`MESSAGE_ID`" añadió a la representación de la table.
+11:28:44,804 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [DATASTORE_ID] -> Columnas [`MESSAGE`.`MESSAGE_ID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+11:28:44,805 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Va a manjejar la persistencia de Clase : es.deusto.server.jdo.User [Tabla : `USER`, Estrategia de heredar : new-table]
+11:28:44,806 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`USER`.`LOGIN`" añadió a la representación de la table.
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.User.login] -> Columnas [`USER`.`LOGIN`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La tabla `MESSAGE` va a manejar la persistencia de los campos de la clase es.deusto.server.jdo.Message (estrategia de heredar="new-table")
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`MESSAGE`.`TEXT`" añadió a la representación de la table.
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+11:28:44,808 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.Message.text] -> Columnas [`MESSAGE`.`TEXT`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+11:28:44,809 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`MESSAGE`.`TIMESTAMP`" añadió a la representación de la table.
+11:28:44,809 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.Message.timestamp] -> Columnas [`MESSAGE`.`TIMESTAMP`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+11:28:44,811 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.Message.user] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" ()
+11:28:44,811 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Table/View `MESSAGE` ha sido inicializado
+11:28:44,811 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La tabla `USER` va a manejar la persistencia de los campos de la clase es.deusto.server.jdo.User (estrategia de heredar="new-table")
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Va a manjejar la persistencia de Campo : es.deusto.server.jdo.User.messages [Tabla : `USER_MESSAGES`]
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.User.messages] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`USER`.`PASSWORD`" añadió a la representación de la table.
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.User.password] -> Columnas [`USER`.`PASSWORD`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+11:28:44,821 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Table/View `USER` ha sido inicializado
+11:28:44,824 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`USER_MESSAGES`.`LOGIN_OID`" añadió a la representación de la table.
+11:28:44,824 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+11:28:44,824 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.User.messages.[OWNER]] -> Columnas [`USER_MESSAGES`.`LOGIN_OID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+11:28:44,825 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - La columna "`USER_MESSAGES`.`MESSAGE_ID_EID`" añadió a la representación de la table.
+11:28:44,825 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Campo [es.deusto.server.jdo.User.messages.[ELEMENT]] -> Columnas [`USER_MESSAGES`.`MESSAGE_ID_EID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+11:28:44,825 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Table/View `USER_MESSAGES` ha sido inicializado
+11:28:44,827 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@4885cea6 [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto con isolación "serializable" y auto-commit=false
+11:28:44,827 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Empezando transaccion del esquema con conneccion "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@309fb5bb" y isolacion "serializable"
+11:28:44,829 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `MESSAGE` returned no table
+11:28:44,829 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `MESSAGE`
+11:28:44,829 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `MESSAGE`
+(
+    `MESSAGE_ID` BIGINT NOT NULL AUTO_INCREMENT,
+    `TEXT` VARCHAR(255) BINARY NULL,
+    `TIMESTAMP` BIGINT NOT NULL,
+    CONSTRAINT `MESSAGE_PK` PRIMARY KEY (`MESSAGE_ID`)
+) ENGINE=INNODB
+11:28:44,876 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 47 ms
+11:28:44,879 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Cargando información de columna para las tablas "user_messages, message, user" por el Catalogo "", el Esquema ""
+11:28:44,891 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por el Catalogo "", el Esquema "", 1 tablas, tiempo = 12 ms
+11:28:44,891 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por la tabla "MESSAGE" : hemos encontrado 3 columnas
+11:28:44,892 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `USER` returned no table
+11:28:44,892 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `USER`
+11:28:44,892 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `USER`
+(
+    `LOGIN` VARCHAR(255) BINARY NOT NULL,
+    `PASSWORD` VARCHAR(255) BINARY NULL,
+    CONSTRAINT `USER_PK` PRIMARY KEY (`LOGIN`)
+) ENGINE=INNODB
+11:28:44,946 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 54 ms
+11:28:44,947 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Cargando información de columna para las tablas "user_messages, message, user" por el Catalogo "", el Esquema ""
+11:28:44,951 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por el Catalogo "", el Esquema "", 2 tablas, tiempo = 4 ms
+11:28:44,951 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por la tabla "USER" : hemos encontrado 2 columnas
+11:28:44,951 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Check of existence of `USER_MESSAGES` returned no table
+11:28:44,951 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear la tabla `USER_MESSAGES`
+11:28:44,952 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - CREATE TABLE `USER_MESSAGES`
+(
+    `LOGIN_OID` VARCHAR(255) BINARY NOT NULL,
+    `MESSAGE_ID_EID` BIGINT NOT NULL,
+    CONSTRAINT `USER_MESSAGES_PK` PRIMARY KEY (`LOGIN_OID`,`MESSAGE_ID_EID`)
+) ENGINE=INNODB
+11:28:45,040 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 88 ms
+11:28:45,042 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Cargando información de columna para las tablas "user_messages, message, user" por el Catalogo "", el Esquema ""
+11:28:45,050 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por el Catalogo "", el Esquema "", 3 tablas, tiempo = 8 ms
+11:28:45,051 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Información de columna cargado por la tabla "USER_MESSAGES" : hemos encontrado 2 columnas
+11:28:45,073 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear el indice "USER_MESSAGES_N49" en catalogo "" equema ""
+11:28:45,073 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - CREATE INDEX `USER_MESSAGES_N49` ON `USER_MESSAGES` (`LOGIN_OID`)
+11:28:45,124 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 51 ms
+11:28:45,125 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear el indice "USER_MESSAGES_N50" en catalogo "" equema ""
+11:28:45,125 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - CREATE INDEX `USER_MESSAGES_N50` ON `USER_MESSAGES` (`MESSAGE_ID_EID`)
+11:28:45,155 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 30 ms
+11:28:45,158 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear el constreñimiento del foreign key "USER_MESSAGES_FK1" en catalogo "" equema ""
+11:28:45,158 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - ALTER TABLE `USER_MESSAGES` ADD CONSTRAINT `USER_MESSAGES_FK1` FOREIGN KEY (`LOGIN_OID`) REFERENCES `USER` (`LOGIN`) 
+11:28:45,408 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 250 ms
+11:28:45,408 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Crear el constreñimiento del foreign key "USER_MESSAGES_FK2" en catalogo "" equema ""
+11:28:45,408 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - ALTER TABLE `USER_MESSAGES` ADD CONSTRAINT `USER_MESSAGES_FK2` FOREIGN KEY (`MESSAGE_ID_EID`) REFERENCES `MESSAGE` (`MESSAGE_ID`) 
+11:28:45,604 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Tiempo de cumplir = 196 ms
+11:28:45,605 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Committing transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@309fb5bb"
+11:28:45,606 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Schema] - Cerrando la conneccion de la transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@309fb5bb"
+11:28:45,607 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@4885cea6 [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@309fb5bb, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" va a cometer
+11:28:45,608 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@4885cea6 [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@309fb5bb, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
+11:28:45,615 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto con id "es.deusto.server.jdo.User:dipina" no esta en la Cache de nivel 1 [tamaño = 0]
+11:28:45,618 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto con id "es.deusto.server.jdo.User:dipina" no esta en la Cache de nivel 2
+11:28:45,625 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Listener found initialisation for persistable class es.deusto.server.jdo.User
+11:28:45,666 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@126e1aa3" (id="es.deusto.server.jdo.User:dipina") añadido a la Cache de nivel 1 (loadedFlags="[YNN]")
+11:28:45,667 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.User@126e1aa3" (id="es.deusto.server.jdo.User:dipina") tiene cambio de lifeycle : "HOLLOW"->"P_CLEAN"
+11:28:45,667 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.User@126e1aa3" (id="dipina") ha sido puesto en la cache transaccional
+11:28:45,702 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Objeto "es.deusto.server.jdo.User@126e1aa3" va a tener los campos "password" leido de la tabla "`USER`"
+11:28:45,710 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=null, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" abierto con isolación "read-committed" y auto-commit=false
+11:28:45,712 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@4bb48e79, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=1238544558-1, enlisted resources=[]]
+11:28:45,713 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" empezando para la transacción "Xid=   " con flags "0"
+11:28:45,714 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion agregado al pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,728 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingPreparedStatement@33a157ec"
+11:28:45,732 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Native] - SELECT `A0`.`PASSWORD` FROM `USER` `A0` WHERE `A0`.`LOGIN` = <'dipina'>
+11:28:45,733 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Retrieve] - Tiempo de cumplir = 1 ms
+11:28:45,733 (RMI TCP Connection(2)-192.168.59.1) INFO  [DataNucleus.Datastore.Retrieve] - ¡Objeto con el id "dipina" no existe!
+11:28:45,733 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@61233c8d"
+11:28:45,734 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto con id="es.deusto.server.jdo.User:dipina" va a ser borrado de la Cache de nivel 1 [tamaño ahora = 1]
+11:28:45,739 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo el objeto persistente : "es.deusto.server.jdo.User@1b5fe044"
+11:28:45,740 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") añadido a la Cache de nivel 1 (loadedFlags="[YYY]")
+11:28:45,741 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="dipina") ha sido puesto en la cache transaccional
+11:28:45,753 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Objeto "es.deusto.server.jdo.User@1b5fe044" va a ser añadido a la tabla "`USER`"
+11:28:45,754 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion encontrado en el pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,754 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Utilizando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@13c9279c" para la conneccion "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117"
+11:28:45,754 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Native] - INSERT INTO `USER` (`PASSWORD`,`LOGIN`) VALUES (<'dipina'>,<'dipina'>)
+11:28:45,755 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Persist] - Tiempo de cumplir = 1 ms (numero de lineas cambiado = 1) con el PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@13c9279c"
+11:28:45,755 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Persistencia del objeto "es.deusto.server.jdo.User@1b5fe044" va a llamar insertPostProcessing para el campo "es.deusto.server.jdo.User.messages"
+11:28:45,755 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@13c9279c"
+11:28:45,755 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Persistencia del objeto "es.deusto.server.jdo.User@1b5fe044" va a llamar postInsert para el campo "es.deusto.server.jdo.User.messages"
+11:28:45,756 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El campo "es.deusto.server.jdo.User.messages" va a ser persistido por "cascade-persist".
+11:28:45,768 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" campo "messages" ha sido reemplazado por un SCO wrapper de tipo "org.datanucleus.store.types.wrappers.backed.HashSet" [cache-values=true, lazy-loading=true, allow-nulls=false]
+11:28:45,769 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" campo "messages" va a ser inicializado por un contenedor con 0 valores
+11:28:45,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Haciendo commit de la transaacción para el ExecutionContext org.datanucleus.ExecutionContextImpl@33c9a726
+11:28:45,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Manejar de relaciones : empezando
+11:28:45,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Manejar de relaciones : terminado
+11:28:45,770 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() empezado con flush ordenado - 1 objetos registrados
+11:28:45,774 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Cache de Query del tipo "org.datanucleus.query.compiler.SoftQueryCompilationCache" inicializada
+11:28:45,775 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Cache de Query del tipo "org.datanucleus.store.query.cache.SoftQueryDatastoreCompilationCache" inicializada
+11:28:45,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Cache de Query del tipo "org.datanucleus.store.query.cache.SoftQueryResultsCache" inicializada
+11:28:45,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() terminado
+11:28:45,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo la comprobación de "persistence-by-reachability" (commit) ...
+11:28:45,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Performing reachability algorithm on object with id "dipina"
+11:28:45,777 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") usado de la Cache nivel 1 (loadedFlags="[YYY]") [tamaño = 1]
+11:28:45,779 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Object "es.deusto.server.jdo.User@1b5fe044" (id="dipina") estado de vida "P_NEW" añadido a la lista de alcanzables al commit.
+11:28:45,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo la calculación de alcanzables con el contenedor multi-valor del campo "es.deusto.server.jdo.User.messages"
+11:28:45,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Tipo de Java org.datanucleus.store.types.wrappers.backed.HashSet como el tipo de Java java.util.HashSet
+11:28:45,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() empezado con flush ordenado - 0 objetos registrados
+11:28:45,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() terminado
+11:28:45,780 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Ha terminado la comprobación de "persistence-by-reachability" (commit).
+11:28:45,782 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="dipina") añadido a la Cache de nivel 2 (campos="[0, 1, 2]", version="")
+11:28:45,785 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Committing [DataNucleus Transaction, ID=1238544558-1, enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@4bb48e79]]
+11:28:45,785 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" va a cometer para la transacción "Xid=   " con onePhase="true"
+11:28:45,789 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" cerrado
+11:28:45,789 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion borrado del pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@304f9b1c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4374f117, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,793 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") tiene cambio de lifeycle : "P_NEW"->"HOLLOW"
+11:28:45,793 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") fue ser borrado de la cache transactional
+11:28:45,793 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transacción committed en 23 ms
+11:28:45,795 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transaction created [DataNucleus Transaction, ID=1238544558-2, enlisted resources=[]]
+11:28:45,795 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transacción empezada para el ExecutionContext org.datanucleus.ExecutionContextImpl@33c9a726 (optimistic=false)
+11:28:45,819 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - JDOQL Single-String de "SELECT FROM es.deusto.server.jdo.User WHERE login == "dipina" &&  password == "dipina""
+11:28:45,825 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Compilación de "SELECT UNIQUE FROM es.deusto.server.jdo.User WHERE login == "dipina" &&  password == "dipina""
+11:28:45,854 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Tiempo de compilar = 29 ms
+11:28:45,854 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - QueryCompilation:
+  [filter:DyadicExpression{DyadicExpression{PrimaryExpression{login}  =  Literal{dipina}}  AND  DyadicExpression{PrimaryExpression{password}  =  Literal{dipina}}}]
+  [symbols: this type=es.deusto.server.jdo.User]
+11:28:45,856 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Compilación de "SELECT UNIQUE FROM es.deusto.server.jdo.User WHERE login == "dipina" &&  password == "dipina"" para base de datos
+11:28:45,878 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Compile of JDOQL into SQL - JoinType : navigation(default=(using nullability), filter=(using nullability))
+11:28:45,886 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Tiempo de compilar para base de datos = 29
+11:28:45,886 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - SELECT UNIQUE FROM es.deusto.server.jdo.User WHERE login == "dipina" &&  password == "dipina" Query compilado para base de datos a "SELECT 'es.deusto.server.jdo.User' AS `DN_TYPE`,`A0`.`LOGIN`,`A0`.`PASSWORD` FROM `USER` `A0` WHERE `A0`.`LOGIN` = 'dipina' AND `A0`.`PASSWORD` = 'dipina'"
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=null, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" abierto con isolación "read-committed" y auto-commit=false
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Running enlist operation on resource: org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@7fc9aca7, error code TMNOFLAGS and transaction: [DataNucleus Transaction, ID=1238544558-2, enlisted resources=[]]
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" empezando para la transacción "Xid=   " con flags "0"
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion agregado al pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Ejecucion de "SELECT UNIQUE FROM es.deusto.server.jdo.User WHERE login == "dipina" &&  password == "dipina"" ...
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingPreparedStatement@2fa5fa92"
+11:28:45,887 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Native] - SELECT 'es.deusto.server.jdo.User' AS `DN_TYPE`,`A0`.`LOGIN`,`A0`.`PASSWORD` FROM `USER` `A0` WHERE `A0`.`LOGIN` = 'dipina' AND `A0`.`PASSWORD` = 'dipina'
+11:28:45,888 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Retrieve] - Tiempo de cumplir = 1 ms
+11:28:45,891 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Query] - Query de JDOQL : Tiempo de ejecutar = 4 ms
+11:28:45,895 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") usado de la Cache nivel 1 (loadedFlags="[YNN]") [tamaño = 1]
+11:28:45,896 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") tiene cambio de lifeycle : "HOLLOW"->"P_CLEAN"
+11:28:45,896 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="dipina") ha sido puesto en la cache transaccional
+11:28:45,896 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - El objeto "es.deusto.server.jdo.User@1b5fe044" (id="dipina") va a tener los campos siguientes cargados del objeto de Level 2 cache : [1]
+11:28:45,897 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") va a tener el valor en el campo "messages" cambiado por un SCO wrapper
+11:28:45,897 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" campo "messages" ha sido reemplazado por un SCO wrapper de tipo "org.datanucleus.store.types.wrappers.backed.HashSet" [cache-values=true, lazy-loading=true, allow-nulls=false]
+11:28:45,897 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" campo "messages" va a ser inicializado por un contenedor con 0 valores
+11:28:45,897 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.MetaData] - Listener found initialisation for persistable class es.deusto.server.jdo.Message
+11:28:45,899 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo el objeto persistente : "es.deusto.server.jdo.Message@c61294e"
+11:28:45,899 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="org.datanucleus.identity.IdentityReference@7e35337c") ha sido puesto en la cache transaccional
+11:28:45,900 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Objeto "es.deusto.server.jdo.Message@c61294e" va a ser añadido a la tabla "`MESSAGE`"
+11:28:45,900 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion encontrado en el pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,900 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Utilizando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@23b002d0" para la conneccion "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b"
+11:28:45,900 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Native] - INSERT INTO `MESSAGE` (`TEXT`,`TIMESTAMP`) VALUES (<'This is a test!'>,<1491470925897>)
+11:28:45,901 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Persist] - Tiempo de cumplir = 1 ms (numero de lineas cambiado = 1) con el PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@23b002d0"
+11:28:45,902 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Persist] - El objeto "es.deusto.server.jdo.Message@c61294e" etaba puesto en la base de datos y ha recibido el valor de estrategia "1"
+11:28:45,902 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="1[OID]es.deusto.server.jdo.Message") añadido a la Cache de nivel 1 (loadedFlags="[YYY]")
+11:28:45,902 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="org.datanucleus.identity.IdentityReference@7e35337c") puesto en la cache transaccional ya esta referenciado por id="1[OID]es.deusto.server.jdo.Message"
+11:28:45,902 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Persistencia del objeto "es.deusto.server.jdo.Message@c61294e" va a llamar insertPostProcessing para el campo "es.deusto.server.jdo.Message.user"
+11:28:45,902 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Performing reachability on fields [2]
+11:28:45,904 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@23b002d0"
+11:28:45,904 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Persistencia del objeto "es.deusto.server.jdo.Message@c61294e" va a llamar postInsert para el campo "es.deusto.server.jdo.Message.user"
+11:28:45,904 (RMI TCP Connection(2)-192.168.59.1) INFO  [DataNucleus.Persistence] - El objeto "es.deusto.server.jdo.User@1b5fe044" tiene una colleccion "es.deusto.server.jdo.User.messages" pero el elemento "es.deusto.server.jdo.Message@c61294e" no tiene el dueño puesto. Manejando la relación y poniendo el dueño.
+11:28:45,904 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion encontrado en el pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,905 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Utilizando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@7b7d3c4f" para la conneccion "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b"
+11:28:45,912 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Native] - INSERT INTO `USER_MESSAGES` (`LOGIN_OID`,`MESSAGE_ID_EID`) VALUES (<'dipina'>,<1>) 
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore.Persist] - Tiempo de cumplir = 2 ms (numero de lineas cambiado = 1) con el PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@7b7d3c4f"
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Datastore] - Cerrando PreparedStatement "org.datanucleus.store.rdbms.ParamLoggingPreparedStatement@7b7d3c4f"
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") tiene cambio de lifeycle : "P_CLEAN"->"P_DIRTY"
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Haciendo commit de la transaacción para el ExecutionContext org.datanucleus.ExecutionContextImpl@33c9a726
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Manejar de relaciones : empezando
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Manejar de relaciones : terminado
+11:28:45,914 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() empezado con flush ordenado - 1 objetos registrados
+11:28:45,918 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Cambio del objeto "es.deusto.server.jdo.User@1b5fe044" va a llamar postUpdate para el campo "es.deusto.server.jdo.User.messages"
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() terminado
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo la comprobación de "persistence-by-reachability" (commit) ...
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Performing reachability algorithm on object with id "dipina"
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") usado de la Cache nivel 1 (loadedFlags="[YYY]") [tamaño = 2]
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Object "es.deusto.server.jdo.User@1b5fe044" (id="dipina") estado de vida "P_DIRTY" añadido a la lista de alcanzables al commit.
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo la calculación de alcanzables con el contenedor multi-valor del campo "es.deusto.server.jdo.User.messages"
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Object "es.deusto.server.jdo.Message@c61294e" (id="1[OID]es.deusto.server.jdo.Message") estado de vida "P_NEW" añadido a la lista de alcanzables al commit.
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Haciendo la calculación de alcanzables en el campo de PC "es.deusto.server.jdo.Message.user"
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() empezado con flush ordenado - 0 objetos registrados
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - ExecutionContext.internalFlush() terminado
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Persistence] - Ha terminado la comprobación de "persistence-by-reachability" (commit).
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User@1b5fe044") cambiado en la Cache de nivel 2 (campos="[0, 1, 2]", version="") para campos "[1]"
+11:28:45,919 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Cache] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="1[OID]es.deusto.server.jdo.Message") añadido a la Cache de nivel 2 (campos="[0, 1, 2]", version="")
+11:28:45,920 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Committing [DataNucleus Transaction, ID=1238544558-2, enlisted resources=[org.datanucleus.store.rdbms.ConnectionFactoryImpl$EmulatedXAResource@7fc9aca7]]
+11:28:45,920 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" va a cometer para la transacción "Xid=   " con onePhase="true"
+11:28:45,925 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" cerrado
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Connection] - ManagedConneccion borrado del pool : "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@2caf070a [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@7f78764b, commitOnRelease=false, closeOnRelease=false, closeOnTxnEnd=true]" para clave="org.datanucleus.ExecutionContextImpl@33c9a726" y fabrica="ConnectionFactory:tx[org.datanucleus.store.rdbms.ConnectionFactoryImpl@1d952f8]"
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="1[OID]es.deusto.server.jdo.Message") tiene cambio de lifeycle : "P_NEW"->"HOLLOW"
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.Message@c61294e" (id="1[OID]es.deusto.server.jdo.Message") fue ser borrado de la cache transactional
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Lifecycle] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") tiene cambio de lifeycle : "P_DIRTY"->"HOLLOW"
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Objeto "es.deusto.server.jdo.User@1b5fe044" (id="es.deusto.server.jdo.User:dipina") fue ser borrado de la cache transactional
+11:28:45,926 (RMI TCP Connection(2)-192.168.59.1) DEBUG [DataNucleus.Transaction] - Transacción committed en 12 ms

@@ -13,6 +13,11 @@ public class BusController {
 	}
 	
 	public void sendMessage(){
-		rmi.getBusService().sendMessage("My name is Jorge");
+		try {
+			rmi.getBusService().sendMessage("My name is Jorge");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		
 	}
 }

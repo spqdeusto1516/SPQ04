@@ -3,9 +3,6 @@ package termibooking.client.remote;
 import termibooking.server.remote.IBus;
 import termibooking.server.remote.ITermiBooking;
 
-
-
-
 public class RMIServiceLocator {
 	
 	private IBus busserv;
@@ -23,10 +20,10 @@ public class RMIServiceLocator {
 			}
 
 			try {
-				String nameFlight = "//" + args[0] + ":" + args[1] + "/" + args[2];
-				String nameEasyBooking = "//" + args[0] + ":" + args[1] + "/" + args[3];
-				busserv = (IBus) java.rmi.Naming.lookup(nameFlight);
-				termiserv = (ITermiBooking) java.rmi.Naming.lookup(nameEasyBooking);
+				String nameTermiBooking = "//" + args[0] + ":" + args[1] + "/" + args[2];
+				String nameBus = "//" + args[0] + ":" + args[1] + "/" + args[3];
+				busserv = (IBus) java.rmi.Naming.lookup(nameBus);
+				termiserv = (ITermiBooking) java.rmi.Naming.lookup(nameTermiBooking);
 			} catch (Exception e) {
 				System.err.println("- Exception running the client: " + e.getMessage());
 				e.printStackTrace();

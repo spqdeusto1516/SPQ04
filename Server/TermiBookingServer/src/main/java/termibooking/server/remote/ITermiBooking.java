@@ -1,5 +1,7 @@
 package termibooking.server.remote;
 
-public interface ITermiBooking {
+import java.rmi.Remote;
+
+public interface ITermiBooking extends Remote {
 
 }

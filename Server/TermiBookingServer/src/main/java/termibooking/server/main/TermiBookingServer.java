@@ -34,4 +34,8 @@ public class TermiBookingServer {
 		dao.storeReservation(res);
 	}
 	
+	public synchronized void recieveMessage(String message){
+		System.out.println(message);
+	}
+	
 }

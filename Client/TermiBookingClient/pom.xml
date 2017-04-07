@@ -22,43 +22,12 @@
 
 	<!-- search for the latest version of dependencies in http://mvnrepository.com -->
 	<dependencies>
-        <!--<dependency>
-            <groupId>sun</groupId>
-            <artifactId>tools</artifactId>
+        <dependency>
+            <groupId>termibooking.server</groupId>
+            <artifactId>TermiBookingServer</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${java.home}/lib/tools.jar</systemPath>
-        </dependency>-->
-		 <dependency>
-            <groupId>org.datanucleus</groupId>
-            <artifactId>datanucleus-core</artifactId>
-            <version>[5.0.7, 5.9)</version>
-        </dependency>
-        <dependency>
-            <groupId>org.datanucleus</groupId>
-            <artifactId>datanucleus-api-jdo</artifactId>
-            <version>[5.0.7, 5.9)</version>
-        </dependency>
-       <dependency>
-            <groupId>org.datanucleus</groupId>
-            <artifactId>datanucleus-rdbms</artifactId>
-            <version>[5.0.7, 5.9)</version>
-        </dependency>
-       
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>[1.2.17, )</version>
-        </dependency>
-       <dependency>
-            <groupId>org.datanucleus</groupId>
-            <artifactId>javax.jdo</artifactId>
-            <version>[3.2.0-m5, )</version>
-        </dependency>
-		 <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.41</version>
+            <systemPath>${config.files.dir}/TermiBookingServer-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -67,8 +36,7 @@
 			<scope>test</scope>
 		</dependency>
     </dependencies>
- 
-  <build>
+    <build>
          <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -79,33 +47,21 @@
 					<encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-              <plugin>
-				<groupId>org.datanucleus</groupId>
-                <artifactId>datanucleus-maven-plugin</artifactId>
-                <version>5.0.2</version>
-                <configuration>
-                    <log4jConfiguration>${config.files.dir}/log4j.properties</log4jConfiguration>
-                    <verbose>true</verbose>
-                    <props>${config.files.dir}/datanucleus.properties</props>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>enhance</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-			
-        </plugins>
-     </build>
-		
+          </plugins>
+    </build>
 	<profiles> 
 		<!-- run as 'mvn exec:java -Pclient' -->
 		<profile>  
 			<id>client</id>  
-			<build>  
+			<build>
+			<resources>
+					<resource>
+						<directory>${config.files.dir}</directory>
+						<includes>
+							<include>**/*.jar</include>
+						</includes>
+					</resource>
+				</resources>
 				<plugins>  
 					<plugin>  
 						<groupId>org.codehaus.mojo</groupId>  

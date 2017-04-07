@@ -1,5 +1,8 @@
 package termibooking.server.remote;
 
-public interface IBus {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
+public interface IBus extends Remote {
+	public void sendMessage(String message) throws RemoteException;
 }

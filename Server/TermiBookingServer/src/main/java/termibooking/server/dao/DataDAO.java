@@ -12,6 +12,7 @@ import javax.jdo.Transaction;
 
 import termibooking.server.data.Bus;
 import termibooking.server.data.Reservation;
+import termibooking.server.data.Station;
 import termibooking.server.data.User;
 
 
@@ -149,5 +150,46 @@ private PersistenceManagerFactory pmf;
 				
 	   		pm.close();
 	     }
+	}
+
+	@Override
+	public List<User> getUsers() {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		/* By default only 1 level is retrieved from the db
+		 * so if we wish to fetch more than one level, we must indicate it
+		 */
+		pm.getFetchPlan().setMaxFetchDepth(3);
+		
+		Transaction tx = pm.currentTransaction();
+		List<User> users = new ArrayList<>();
+		
+		try {
+			System.out.println("   * Retrieving an Extent for Products.");
+			
+			tx.begin();			
+			Extent<User> extent = pm.getExtent(User.class, true);
+			
+			for (User user : extent) {
+				users.add(user);
+			}
+
+			tx.commit();			
+		} catch (Exception ex) {
+	    	System.out.println("   $ Error retrieving an extent: " + ex.getMessage());
+	    } finally {
+	    	if (tx != null && tx.isActive()) {
+	    		tx.rollback();
+	    	}
+
+    		pm.close();    		
+	    }
+	    				
+		return users;
+	}
+
+	@Override
+	public void deleteUser(User user) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -25,7 +25,7 @@ public class TermiBookingManagerServer {
 			System.out.println("Reserva");
 			TermiBookingServer termiserv = new TermiBookingServer();
 			
-			//termiserv.storeReservation();
+			termiserv.storeReservation();
 			
 			ITermiBooking termibookingser = new TermiBookingFacade();			
 			Naming.rebind(nameTermiBooking, termibookingser);

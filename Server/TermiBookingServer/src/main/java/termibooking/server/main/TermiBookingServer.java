@@ -1,6 +1,7 @@
 package termibooking.server.main;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import termibooking.server.dao.DataDAO;
 import termibooking.server.dao.IDataDAO;
@@ -34,6 +35,18 @@ public class TermiBookingServer {
 		dao.storeReservation(res);
 	}
 	
+	public void showBuses(String dest, String dep){
+		List<Bus> buses=dao.getBuses();
+		Station departure;
+		Station arrival;
+		for (int i = 0; i < buses.size(); i++) {
+			arrival=buses.get(i).getArrivalSta();
+			departure=buses.get(i).getDepartureSta();
+			if(arrival.getName()==dest&&departure.getName()==dep){
+				System.out.println(buses.get(i).getCode());
+			}
+		}
+	}
 	public synchronized void recieveMessage(String message){
 		System.out.println(message);
 	}

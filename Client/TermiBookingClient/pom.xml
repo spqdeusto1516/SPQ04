@@ -53,15 +53,6 @@
 		<!-- run as 'mvn exec:java -Pclient' -->
 		<profile>  
 			<id>client</id>  
-			<build>
-			<resources>
-					<resource>
-						<directory>${config.files.dir}</directory>
-						<includes>
-							<include>**/*.jar</include>
-						</includes>
-					</resource>
-				</resources>
 				<plugins>  
 					<plugin>  
 						<groupId>org.codehaus.mojo</groupId>  

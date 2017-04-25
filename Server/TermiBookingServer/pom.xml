@@ -167,6 +167,38 @@
 						
 				</plugins>  
 			</build>  
+		</profile>
+		<!-- run as 'mvn exec:java -Pclient' -->
+		<profile>  
+			<id>client</id>  
+			<build>
+				<plugins>  
+					<plugin>  
+						<groupId>org.codehaus.mojo</groupId>  
+						<artifactId>exec-maven-plugin</artifactId>  
+						<version>1.2.1</version>  
+						<configuration>  
+									<mainClass>termibooking.client.main.Main</mainClass>
+									<systemProperties>
+										<systemProperty>
+											<key>java.security.manager</key>
+											<value>java.rmi.RMISecurityManager</value>
+										</systemProperty>
+										<systemProperty>
+											<key>java.security.policy</key>
+											<value>${policy.file}</value>
+										</systemProperty>
+									</systemProperties>
+									<arguments>  
+										<argument>${server.IP}</argument>  
+										<argument>${server.port}</argument>  
+										<argument>${server.termibooking}</argument>
+										<argument>${server.bus}</argument>
+									</arguments>  
+						</configuration>  
+					</plugin>  
+				</plugins>
+			</build>  
 		</profile>  
 	</profiles>  
 	<repositories>

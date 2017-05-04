@@ -2,7 +2,11 @@ package termibooking.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.List;
 
+import termibooking.server.data.Bus;
+import termibooking.server.dto.BusAssembler;
+import termibooking.server.dto.BusDTO;
 import termibooking.server.main.TermiBookingServer;
 
 public class BusFacade extends UnicastRemoteObject implements IBus{
@@ -20,9 +24,11 @@ public class BusFacade extends UnicastRemoteObject implements IBus{
 	}
 
 
-	@Override
-	public void sendMessage(String message) {
-		teser.recieveMessage(message);
-		
+	public List<BusDTO> findBus(String arrival, String departure)
+			throws RemoteException {
+		BusAssembler ba=new BusAssembler();
+		List<Bus> buses=teser.findBus(arrival, departure);
+		List<BusDTO> busesdto=ba.assemble(buses);
+		return busesdto;
 	}
 }

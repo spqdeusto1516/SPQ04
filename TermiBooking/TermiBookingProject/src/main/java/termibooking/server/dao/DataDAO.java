@@ -23,42 +23,47 @@ private PersistenceManagerFactory pmf;
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 	}
 	
-	public void storeUser(User user) {
-		this.storeObject(user);
+	public boolean storeUser(User user) {
+		return this.storeObject(user);
 	}
 	
-	private void storeObject(User user) {
+	private boolean storeObject(User user) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	   
+	    boolean stored;
 	    try {
 	       tx.begin();
 	       System.out.println("   * Storing an object: " + user);
 	       pm.makePersistent(user);
 	       tx.commit();
+	      stored=true;
 	    } catch (Exception ex) {
 	    	System.out.println("   $ Error storing an object: " + ex.getMessage());
+	    	stored=false;
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
 	    		tx.rollback();
 	    	}
 				
     		pm.close();
+    		
 	    }
+	    return stored;
 	}
 	
-	@Override
-	public void storeReservation(Reservation reserv) {
+	public boolean storeReservation(Reservation reserv) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	   
+	    boolean stored;
 	    try {
 	       tx.begin();
 	       System.out.println("   * Storing an object: " + reserv);
 	       pm.makePersistent(reserv);
 	       tx.commit();
+	       stored=true;
 	    } catch (Exception ex) {
 	    	System.out.println("   $ Error storing an object: " + ex.getMessage());
+	    	stored=false;
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
 	    		tx.rollback();
@@ -66,7 +71,7 @@ private PersistenceManagerFactory pmf;
 				
     		pm.close();
 	    }
-		
+		return stored;
 	}
 	
 	public List<Bus> getBuses() {
@@ -77,7 +82,7 @@ private PersistenceManagerFactory pmf;
 		pm.getFetchPlan().setMaxFetchDepth(3);
 		
 		Transaction tx = pm.currentTransaction();
-		List<Bus> buses = new ArrayList<>();
+		List<Bus> buses = new ArrayList<Bus>();
 		
 		try {
 			System.out.println("   * Retrieving an Extent for Products.");
@@ -103,7 +108,7 @@ private PersistenceManagerFactory pmf;
 		return buses;
 	}
 	
-	public User getUser(String name, String pass){
+	public User getUser(String name){
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(3);
 		
@@ -114,7 +119,7 @@ private PersistenceManagerFactory pmf;
 			System.out.println ("   * Querying a Product: " + name);
 			
 	    	tx.begin();
-	    	Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + name + "' AND password == '"+pass+"'");
+	    	Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + name +"'");
 	    	query.setUnique(true);
 	    	user = (User)query.execute();	    
  	    	tx.commit();
@@ -133,16 +138,18 @@ private PersistenceManagerFactory pmf;
 	}	
 	
 	
-	public void updateBus(Bus bus) {
+	public boolean updateBus(Bus bus) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 	    Transaction tx = pm.currentTransaction();
-	    
+	    boolean updated;
 	    try {
 	    	tx.begin();
 	    	pm.makePersistent(bus);
 	    	tx.commit();
+	    	updated=true;
 	     } catch (Exception ex) {
 		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		   	updated=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
 		   		tx.rollback();
@@ -150,9 +157,9 @@ private PersistenceManagerFactory pmf;
 				
 	   		pm.close();
 	     }
+	    return updated;
 	}
 
-	@Override
 	public List<User> getUsers() {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		/* By default only 1 level is retrieved from the db
@@ -161,7 +168,7 @@ private PersistenceManagerFactory pmf;
 		pm.getFetchPlan().setMaxFetchDepth(3);
 		
 		Transaction tx = pm.currentTransaction();
-		List<User> users = new ArrayList<>();
+		List<User> users = new ArrayList<User>();
 		
 		try {
 			System.out.println("   * Retrieving an Extent for Products.");
@@ -187,9 +194,32 @@ private PersistenceManagerFactory pmf;
 		return users;
 	}
 
-	@Override
-	public void deleteUser(User user) {
-		// TODO Auto-generated method stub
-		
+	public boolean deleteUser(String name) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		pm.getFetchPlan().setMaxFetchDepth(3);
+		Transaction tx = pm.currentTransaction();
+	    User user=null;
+	    boolean deleted;
+		try {
+
+	    	tx.begin();
+	    	Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + name +"'");
+	    	query.setUnique(true);
+	    	user = (User)query.execute();
+	    	pm.deletePersistent(user);
+ 	    	tx.commit();
+ 	    	deleted=true;
+	     } catch (Exception ex) {
+		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		   	deleted=false;
+	     } finally {
+		   	if (tx != null && tx.isActive()) {
+		   		tx.rollback();
+		 }
+				
+	   		pm.close();
+	     }
+
+		return deleted;
 	}
 }

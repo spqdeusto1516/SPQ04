@@ -34,7 +34,7 @@ public class RMIServiceLocator {
 	    	return busserv;
 	    }
 	    
-	    public ITermiBooking getEasyBookingtService() {
+	    public ITermiBooking getTermiBookingtService() {
 	    	return termiserv;
 	    }
 

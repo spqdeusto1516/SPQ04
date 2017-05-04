@@ -1,6 +1,7 @@
 package termibooking.server.data;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
@@ -16,14 +17,23 @@ public class Reservation {
 	private ArrayList<Passenger> passengers = new ArrayList<Passenger>();
 	@Persistent(defaultFetchGroup="true")
 	private User user;
+	@Persistent(defaultFetchGroup="true")
+	private Pay payment;
 	
-	public Reservation(Bus bus, int seats, ArrayList<Passenger> passengers,
-			User user) {
+	public Reservation(Bus bus, int seats, User user, Pay payment) {
 		super();
 		this.bus = bus;
 		this.seats = seats;
-		this.passengers = passengers;
 		this.user = user;
+		this.payment = payment;
+	}
+
+	public Pay getPayment() {
+		return payment;
+	}
+
+	public void setPayment(Pay payment) {
+		this.payment = payment;
 	}
 
 	public Bus getBus() {
@@ -49,7 +59,9 @@ public class Reservation {
 	public void setPassengers(ArrayList<Passenger> passengers) {
 		this.passengers = passengers;
 	}
-
+	public void addPassenger(Passenger pas){
+		this.passengers.add(pas);
+	}
 	public User getUser() {
 		return user;
 	}

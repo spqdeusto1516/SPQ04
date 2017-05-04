@@ -9,14 +9,11 @@ public class User {
 	
 	private String email;
 	private String password;
-	@Persistent(defaultFetchGroup="true")
-	private Station defaultStation;
 	
-	public User(String email, String password, Station defaultStation) {
+	public User(String email, String password) {
 		super();
 		this.email = email;
 		this.password = password;
-		this.defaultStation = defaultStation;
 	}
 
 	public String getEmail() {
@@ -35,13 +32,6 @@ public class User {
 		this.password = password;
 	}
 
-	public Station getDefaultStation() {
-		return defaultStation;
-	}
-
-	public void setDefaultStation(Station defaultStation) {
-		this.defaultStation = defaultStation;
-	}
 	
 	
 

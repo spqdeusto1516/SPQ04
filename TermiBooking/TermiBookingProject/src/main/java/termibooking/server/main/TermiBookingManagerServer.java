@@ -2,6 +2,9 @@ package termibooking.server.main;
 
 import java.rmi.Naming;
 
+import termibooking.server.data.Bus;
+import termibooking.server.data.Company;
+import termibooking.server.data.Station;
 import termibooking.server.remote.BusFacade;
 import termibooking.server.remote.IBus;
 import termibooking.server.remote.ITermiBooking;
@@ -22,12 +25,8 @@ public class TermiBookingManagerServer {
 		String nameTermiBooking = "//" + args[0] + ":" + args[1] + "/" + args[2];
 
 		try {
-			System.out.println("Reserva");
 			TermiBookingServer termiserv = new TermiBookingServer();
-			
-			termiserv.storeReservation();
-			
-			ITermiBooking termibookingser = new TermiBookingFacade();			
+			ITermiBooking termibookingser = new TermiBookingFacade(termiserv);			
 			Naming.rebind(nameTermiBooking, termibookingser);
 			System.out.println("* TermiBooking Service '"+nameTermiBooking+"'  active and waiting...");
 			

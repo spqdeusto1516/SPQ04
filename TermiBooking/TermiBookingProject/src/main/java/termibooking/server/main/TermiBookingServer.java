@@ -17,10 +17,11 @@ import termibooking.server.data.Station;
 import termibooking.server.data.User;
 import termibooking.server.dto.BusDTO;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TermiBookingServer {
-	
+	final static Logger logger = LoggerFactory.getLogger(TermiBookingServer.class);
 	private IDataDAO dao;
 	private User user;
 	Reservation reser;
@@ -57,7 +58,7 @@ public class TermiBookingServer {
 	public synchronized void addPassenger(String name, String surname, int age, int seats){
 		Passenger pas= new Passenger(name, surname, age);
 		reser.addPassenger(pas);
-		System.out.println("New passenger");
+		logger.info("New passenger");
 		if (seats==0){
 			dao.storeReservation(reser);
 		}

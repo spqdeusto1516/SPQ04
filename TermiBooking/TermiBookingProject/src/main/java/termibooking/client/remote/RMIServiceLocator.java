@@ -1,10 +1,13 @@
 package termibooking.client.remote;
 
+import termibooking.server.dao.DataDAO;
 import termibooking.server.remote.IBus;
 import termibooking.server.remote.ITermiBooking;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RMIServiceLocator {
-	
+	final static Logger logger = LoggerFactory.getLogger(RMIServiceLocator.class);
 	private IBus busserv;
 	private ITermiBooking termiserv;
 
@@ -25,7 +28,7 @@ public class RMIServiceLocator {
 				busserv = (IBus) java.rmi.Naming.lookup(nameBus);
 				termiserv = (ITermiBooking) java.rmi.Naming.lookup(nameTermiBooking);
 			} catch (Exception e) {
-				System.err.println("- Exception running the client: " + e.getMessage());
+				logger.error("- Exception running the client: " + e.getMessage());
 				e.printStackTrace();
 			}
 	    	

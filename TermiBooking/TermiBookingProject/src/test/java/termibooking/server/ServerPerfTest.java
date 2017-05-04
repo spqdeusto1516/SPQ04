@@ -22,9 +22,14 @@ import termibooking.server.data.Station;
 import termibooking.server.data.User;
 import termibooking.server.main.TermiBookingServer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class ServerPerfTest {
 	
 	TermiBookingServer teser=new TermiBookingServer();
+	
+	final static Logger logger = LoggerFactory.getLogger(ServerPerfTest.class);
 	
 	@Rule public ContiPerfRule rule = new ContiPerfRule();
 	/*
@@ -65,10 +70,10 @@ public class ServerPerfTest {
         {
             tx.begin();
 	
-            System.out.println("Deleting test users from persistence. Cleaning up.");
+            logger.info("Deleting test users from persistence. Cleaning up.");
             Query<User> q1 = pm.newQuery(User.class);
             long numberInstancesDeleted = q1.deletePersistentAll();
-            System.out.println("Deleted " + numberInstancesDeleted + " user");
+            logger.info("Deleted " + numberInstancesDeleted + " user");
 			
             tx.commit();
         }

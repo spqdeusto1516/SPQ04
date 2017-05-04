@@ -32,6 +32,8 @@ import termibooking.server.main.TermiBookingServer;
 import termibooking.server.remote.ITermiBooking;
 import termibooking.server.remote.TermiBookingFacade;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RMITest {
 	// Properties are hard-coded because we want the test to be executed without external interaction
@@ -39,6 +41,8 @@ public class RMITest {
 		private static String cwd = RMITest.class.getProtectionDomain().getCodeSource().getLocation().getFile();
 		private static Thread rmiRegistryThread = null;
 		private static Thread rmiServerThread = null;
+		
+		final static Logger logger = LoggerFactory.getLogger(RMITest.class);
 		
 		private ITermiBooking termibooking;
 
@@ -54,9 +58,9 @@ public class RMITest {
 				public void run() {
 					try {
 						java.rmi.registry.LocateRegistry.createRegistry(1099);
-						System.out.println("BeforeClass: RMI registry ready.");
+						logger.info("BeforeClass: RMI registry ready.");
 					} catch (Exception e) {
-						System.out.println("Exception starting RMI registry:");
+						logger.error("Exception starting RMI registry:");
 						e.printStackTrace();
 					}	
 				}
@@ -73,8 +77,8 @@ public class RMITest {
 			class RMIServerRunnable implements Runnable {
 
 				public void run() {
-					System.out.println("This is a test to check how mvn test executes this test without external interaction; JVM properties by program");
-					System.out.println("**************: " + cwd);
+					logger.info("This is a test to check how mvn test executes this test without external interaction; JVM properties by program");
+					logger.info("**************: " + cwd);
 					System.setProperty("java.rmi.server.codebase", "file:" + cwd);
 					System.setProperty("java.security.policy", "target\\test-classes\\security\\java.policy");
 
@@ -83,18 +87,18 @@ public class RMITest {
 					}
 
 					String name = "//127.0.0.1:1099/termibooking";
-					System.out.println("BeforeClass - Setting the server ready TestServer name: " + name);
+					logger.info("BeforeClass - Setting the server ready TestServer name: " + name);
 
 					try {
 						TermiBookingServer teser = new TermiBookingServer();
 						ITermiBooking termibooking = new TermiBookingFacade(teser);
 						Naming.rebind(name, termibooking);
 					} catch (RemoteException re) {
-						System.err.println(" # Messenger RemoteException: " + re.getMessage());
+						logger.error(" # Messenger RemoteException: " + re.getMessage());
 						re.printStackTrace();
 						System.exit(-1);
 					} catch (MalformedURLException murle) {
-						System.err.println(" # Messenger MalformedURLException: " + murle.getMessage());
+						logger.error(" # Messenger MalformedURLException: " + murle.getMessage());
 						murle.printStackTrace();
 						System.exit(-1);
 					}
@@ -120,11 +124,11 @@ public class RMITest {
 			}
 
 			String name = "//127.0.0.1:1099/termibooking";
-			System.out.println("BeforeTest - Setting the client ready for calling TestServer name: " + name);
+			logger.info("BeforeTest - Setting the client ready for calling TestServer name: " + name);
 			termibooking = (ITermiBooking) java.rmi.Naming.lookup(name);
 			}
 			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
+				logger.error(" # Messenger RemoteException: " + re.getMessage());
 		//		re.printStackTrace();
 				System.exit(-1);
 			} 
@@ -135,11 +139,11 @@ public class RMITest {
 		public void registerNewUserTest() {
 			boolean signed=false;
 			try{
-				System.out.println("Test 1 - Register new user");
+				logger.info("Test 1 - Register new user");
 				signed=termibooking.signIn("joseesku@gmail.com", "1234");
 			}
 			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
+				logger.error(" # Messenger RemoteException: " + re.getMessage());
 			} 
 			/*
 			 * Very simple test, inserting a valid new user
@@ -150,14 +154,14 @@ public class RMITest {
 		@Test public void removingUserTest() {
 			boolean removed=false;
 			try{
-				System.out.println("Test 2 - Removing a user");
+				logger.info("Test 2 - Removing a user");
 				termibooking.signIn("jon.iturmendi@opendeusto.es", "1234");
 				// Silly way of testing the password testing
 				removed=termibooking.removeUser("jon.iturmendi@opendeusto.es");
 				
 			}
 			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
+				logger.error(" # Messenger RemoteException: " + re.getMessage());
 			} 
 			/*
 			 * Very simple test 
@@ -167,15 +171,15 @@ public class RMITest {
 		
 		
 		@Test public void reservationTest() {
-			System.out.println("Test 3 - Making a reservation");
+			logger.info("Test 3 - Making a reservation");
 			boolean reserved=true;
 			try{
 				termibooking.signIn("jon.iturmendi@opendeusto.es", "1234");
 				BusDTO bus=new BusDTO("6", 1, 50, 50, 20, "Bilbao", "Madrid", "Alsa");
-				System.out.println("Hacer reserva");
+				logger.info("Hacer reserva");
 				termibooking.newReservation(bus, 3);
 			} catch (Exception re){
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
+				logger.error(" # Messenger RemoteException: " + re.getMessage());
 			}
 			assertTrue(reserved);
 		}
@@ -189,10 +193,10 @@ public class RMITest {
 	        {
 	            tx.begin();
 		
-	            System.out.println("Deleting test users from persistence. Cleaning up.");
+	            logger.info("Deleting test users from persistence. Cleaning up.");
 	            Query<User> q1 = pm.newQuery(User.class);
 	            long numberInstancesDeleted = q1.deletePersistentAll();
-	            System.out.println("Deleted " + numberInstancesDeleted + " user");
+	            logger.info("Deleted " + numberInstancesDeleted + " user");
 				
 	            tx.commit();
 	        }

@@ -1,6 +1,7 @@
 package termibooking.server.dao;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.jdo.Extent;
@@ -14,9 +15,12 @@ import termibooking.server.data.Bus;
 import termibooking.server.data.Reservation;
 import termibooking.server.data.Station;
 import termibooking.server.data.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class DataDAO implements IDataDAO {
+	final static Logger logger = LoggerFactory.getLogger(DataDAO.class);
 private PersistenceManagerFactory pmf;
 	
 	public DataDAO(){
@@ -33,12 +37,12 @@ private PersistenceManagerFactory pmf;
 	    boolean stored;
 	    try {
 	       tx.begin();
-	       System.out.println("   * Storing an object: " + user);
+	       logger.info("   * Storing an object: " + user);
 	       pm.makePersistent(user);
 	       tx.commit();
 	      stored=true;
 	    } catch (Exception ex) {
-	    	System.out.println("   $ Error storing an object: " + ex.getMessage());
+	    	logger.error("   $ Error storing an object: " + ex.getMessage());
 	    	stored=false;
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
@@ -57,12 +61,12 @@ private PersistenceManagerFactory pmf;
 	    boolean stored;
 	    try {
 	       tx.begin();
-	       System.out.println("   * Storing an object: " + reserv);
+	       logger.info("   * Storing an object: " + reserv);
 	       pm.makePersistent(reserv);
 	       tx.commit();
 	       stored=true;
 	    } catch (Exception ex) {
-	    	System.out.println("   $ Error storing an object: " + ex.getMessage());
+	    	logger.error("   $ Error storing an object: " + ex.getMessage());
 	    	stored=false;
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
@@ -85,7 +89,7 @@ private PersistenceManagerFactory pmf;
 		List<Bus> buses = new ArrayList<Bus>();
 		
 		try {
-			System.out.println("   * Retrieving an Extent for Products.");
+			logger.info("   * Retrieving an Extent for Products.");
 			
 			tx.begin();			
 			Extent<Bus> extent = pm.getExtent(Bus.class, true);
@@ -96,7 +100,7 @@ private PersistenceManagerFactory pmf;
 
 			tx.commit();			
 		} catch (Exception ex) {
-	    	System.out.println("   $ Error retrieving an extent: " + ex.getMessage());
+	    	logger.error("   $ Error retrieving an extent: " + ex.getMessage());
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
 	    		tx.rollback();
@@ -116,7 +120,7 @@ private PersistenceManagerFactory pmf;
 		User user = null;
 	    
 		try {
-			System.out.println ("   * Querying a Product: " + name);
+			logger.info ("   * Querying a Product: " + name);
 			
 	    	tx.begin();
 	    	Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + name +"'");
@@ -125,7 +129,7 @@ private PersistenceManagerFactory pmf;
  	    	tx.commit();
    	    
 	     } catch (Exception ex) {
-		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		   	logger.error("   $ Error retreiving an extent: " + ex.getMessage());
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
 		   		tx.rollback();
@@ -148,7 +152,7 @@ private PersistenceManagerFactory pmf;
 	    	tx.commit();
 	    	updated=true;
 	     } catch (Exception ex) {
-		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		   	logger.error("   $ Error retreiving an extent: " + ex.getMessage());
 		   	updated=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {
@@ -171,7 +175,7 @@ private PersistenceManagerFactory pmf;
 		List<User> users = new ArrayList<User>();
 		
 		try {
-			System.out.println("   * Retrieving an Extent for Products.");
+			logger.info("   * Retrieving an Extent for Products.");
 			
 			tx.begin();			
 			Extent<User> extent = pm.getExtent(User.class, true);
@@ -182,7 +186,7 @@ private PersistenceManagerFactory pmf;
 
 			tx.commit();			
 		} catch (Exception ex) {
-	    	System.out.println("   $ Error retrieving an extent: " + ex.getMessage());
+	    	logger.error("   $ Error retrieving an extent: " + ex.getMessage());
 	    } finally {
 	    	if (tx != null && tx.isActive()) {
 	    		tx.rollback();
@@ -210,7 +214,7 @@ private PersistenceManagerFactory pmf;
  	    	tx.commit();
  	    	deleted=true;
 	     } catch (Exception ex) {
-		   	System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+		   	logger.error("   $ Error retreiving an extent: " + ex.getMessage());
 		   	deleted=false;
 	     } finally {
 		   	if (tx != null && tx.isActive()) {

@@ -45,7 +45,7 @@ public class RMITest {
 		final static Logger logger = LoggerFactory.getLogger(RMITest.class);
 		
 		private ITermiBooking termibooking;
-
+		@Rule public ContiPerfRule rule = new ContiPerfRule();
 		public static junit.framework.Test suite() {
 			return new JUnit4TestAdapter(RMITest.class);
 		}
@@ -135,7 +135,8 @@ public class RMITest {
 			
 		}
 		
-		@Test 
+		@Test
+		@PerfTest(invocations=300, threads=10)
 		public void registerNewUserTest() {
 			boolean signed=false;
 			try{
@@ -151,7 +152,10 @@ public class RMITest {
 			assertTrue( signed );
 		}
 		
-		@Test public void removingUserTest() {
+		@Test
+		@PerfTest(duration=10000)
+		@Required(throughput = 80)
+		public void removingUserTest() {
 			boolean removed=false;
 			try{
 				logger.info("Test 2 - Removing a user");
@@ -170,7 +174,10 @@ public class RMITest {
 		}
 		
 		
-		@Test public void reservationTest() {
+		@Test
+		@PerfTest(invocations = 500)
+		@Required(max = 150, average = 50)
+		public void reservationTest() {
 			logger.info("Test 3 - Making a reservation");
 			boolean reserved=true;
 			try{

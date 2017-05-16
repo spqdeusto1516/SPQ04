@@ -95,7 +95,7 @@ public class DAOTest {
 		}
 		assertTrue(true);
 	}
-	/*
+	
 	@After public  void deleteDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -105,13 +105,11 @@ public class DAOTest {
             tx.begin();
 	
             System.out.println("Deleting test users from persistence. Cleaning up.");
-            Query<Pay> q3 = pm.newQuery(Pay.class);
             Query<Reservation> q1 = pm.newQuery(Reservation.class);
             Query<User> q2 = pm.newQuery(User.class);
-            long numberInstancesDeletedP = q3.deletePersistentAll();
             long numberInstancesDeletedR = q1.deletePersistentAll();
             long numberInstancesDeletedU = q2.deletePersistentAll();
-            System.out.println("Deleted " + numberInstancesDeletedU + " user" + numberInstancesDeletedR + "reservation" + numberInstancesDeletedP + " payment");
+            System.out.println("Deleted " + numberInstancesDeletedU + " user" + numberInstancesDeletedR + "reservation");
 			
             tx.commit();
         }
@@ -125,5 +123,4 @@ public class DAOTest {
         }
 		
 	}
-	*/
 }

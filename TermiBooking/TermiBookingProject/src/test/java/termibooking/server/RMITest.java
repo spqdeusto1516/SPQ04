@@ -153,7 +153,7 @@ public class RMITest {
 		}
 		
 		@Test
-		@PerfTest(duration=10000)
+		@PerfTest(duration=1000)
 		public void removingUserTest() {
 			boolean removed=false;
 			try{

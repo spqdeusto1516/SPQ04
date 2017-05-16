@@ -19,13 +19,14 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import org.junit.Rule;
 import org.databene.contiperf.Required;
 import org.databene.contiperf.PerfTest;
 import org.databene.contiperf.junit.ContiPerfRule;
 import org.databene.contiperf.report.EmptyReportModule;
 
+import termibooking.server.data.Pay;
+import termibooking.server.data.Reservation;
 import termibooking.server.data.User;
 import termibooking.server.dto.BusDTO;
 import termibooking.server.main.TermiBookingServer;
@@ -212,9 +213,13 @@ public class RMITest {
 	            tx.begin();
 		
 	            logger.info("Deleting test users from persistence. Cleaning up.");
-	            Query<User> q1 = pm.newQuery(User.class);
-	            long numberInstancesDeleted = q1.deletePersistentAll();
-	            logger.info("Deleted " + numberInstancesDeleted + " user");
+	            Query<Pay> q3 = pm.newQuery(Pay.class);
+	            Query<Reservation> q1 = pm.newQuery(Reservation.class);
+	            Query<User> q2 = pm.newQuery(User.class);
+	            long numberInstancesDeletedP = q3.deletePersistentAll();
+	            long numberInstancesDeletedR = q1.deletePersistentAll();
+	            long numberInstancesDeletedU = q2.deletePersistentAll();
+	            System.out.println("Deleted " + numberInstancesDeletedU + " user" + numberInstancesDeletedR + "reservation" + numberInstancesDeletedP + " payment");
 				
 	            tx.commit();
 	        }

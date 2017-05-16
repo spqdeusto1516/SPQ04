@@ -202,7 +202,6 @@ public class RMITest {
 	            logger.info("Deleting test users from persistence. Cleaning up.");
 	            Query<Reservation> q1 = pm.newQuery(Reservation.class);
 	            Query<User> q2 = pm.newQuery(User.class);
-	            long numberInstancesDeletedP = q3.deletePersistentAll();
 	            long numberInstancesDeletedR = q1.deletePersistentAll();
 	            long numberInstancesDeletedU = q2.deletePersistentAll();
 	            System.out.println("Deleted " + numberInstancesDeletedU + " user" + numberInstancesDeletedR + "reservation");

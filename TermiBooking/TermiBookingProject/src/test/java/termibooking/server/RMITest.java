@@ -203,7 +203,7 @@ public class RMITest {
 			}
 			assertTrue(true);
 		}
-
+/*
 		@After public  void deleteDatabase() {
 			PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 			PersistenceManager pm = pmf.getPersistenceManager();
@@ -244,4 +244,5 @@ public class RMITest {
 			
 
 		} 
+		*/
 }

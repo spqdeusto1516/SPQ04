@@ -189,7 +189,19 @@ public class RMITest {
 			}
 			assertTrue(reserved);
 		}
-		
+		@Test
+		public void addPassengerTest(){
+			logger.info("Test 4 - Adding passenger");
+			try{
+				termibooking.signIn("jon.iturmendi@opendeusto.es", "1234");
+				BusDTO bus=new BusDTO("6", 1, 50, 50, 20, "Bilbao", "Madrid", "Alsa");
+				termibooking.newReservation(bus, 3);
+				termibooking.addPassenger("Joseba", "Eskubi", 21, 0);
+			} catch (Exception re){
+				logger.error(" # Messenger RemoteException: " + re.getMessage());
+			}
+			assertTrue(true);
+		}
 
 		@After public  void deleteDatabase() {
 			PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");

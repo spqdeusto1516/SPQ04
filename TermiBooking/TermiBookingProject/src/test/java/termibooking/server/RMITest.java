@@ -154,7 +154,6 @@ public class RMITest {
 		
 		@Test
 		@PerfTest(duration=10000)
-		@Required(throughput = 80)
 		public void removingUserTest() {
 			boolean removed=false;
 			try{

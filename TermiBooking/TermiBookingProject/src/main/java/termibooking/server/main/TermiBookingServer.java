@@ -41,7 +41,7 @@ public class TermiBookingServer {
 	public synchronized boolean newReservation(Bus bus, int seats){
 		int remaining_seats=bus.getRemaining_seats();
 		bus.setRemaining_seats(remaining_seats-seats);
-		dao.updateBus(bus);
+		//dao.updateBus(bus);
 		Pay payment=new Pay();
 		payment.PayCreditCard(300, "5563645636473", user);
 		reser=new Reservation(bus, seats, user, payment);
@@ -64,7 +64,17 @@ public class TermiBookingServer {
 		}
 	}
 	public synchronized List<Bus> findBus(String arrival, String departure){
+		List<Bus> busDAO = new ArrayList<Bus>();
+		busDAO = dao.getBuses();
+		for(Bus b:busDAO){
+			logger.info(b.getCode());
+		}
 		List<Bus> buses=new ArrayList<Bus>();
+		for(Bus b : busDAO){
+			if(b.getArrivalSta().getName().equals(arrival) && b.getDepartureSta().getName().equals(departure)){
+				buses.add(b);
+			}
+		}
 		return buses;
 		
 	}
@@ -72,5 +82,6 @@ public class TermiBookingServer {
 		boolean deleted=dao.deleteUser(email);
 		return deleted;
 	}
+	
 	
 }

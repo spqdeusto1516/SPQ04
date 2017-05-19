@@ -42,4 +42,15 @@ public class TermiBookingController {
 		}
 		return reserved;
 	}
+	
+	public void addPassenger(String name, String surname, int age, int seats){
+		try {
+			rmi.getTermiBookingtService().addPassenger(name, surname, age, seats);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
 }

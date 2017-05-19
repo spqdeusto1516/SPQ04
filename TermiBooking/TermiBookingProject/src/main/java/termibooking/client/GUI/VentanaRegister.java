@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
+import termibooking.client.GUI.VentanaPassenger.MiActionListener;
 import termibooking.client.controller.TermiBookingController;
 
 
@@ -69,8 +70,21 @@ public class VentanaRegister extends JFrame {
 		int x = (int) (resolucion.getWidth())/2 - anchVentana/2;
 		int y = (int) (resolucion.getHeight())/2 - altVentana/2;
 		setLocation(x, y);
+		
+		ActionListener salir = new MiActionListener(this);
+		btnCreate.addActionListener(salir);
 	}
 
+	class MiActionListener implements ActionListener {
+		VentanaRegister v;
+		public MiActionListener(VentanaRegister v){
+			this.v = v;
+		}
+		
+		public void actionPerformed(ActionEvent arg0){
+			v.dispose();
+		}
+	}
 	
 	
 	public static void main(String[] args) {

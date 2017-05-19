@@ -18,6 +18,7 @@
 		<server.bus>bus</server.bus>
 		<policy.file>${basedir}/src/main/resources/security/java.policy</policy.file>
 		<config.files.dir>${basedir}/src/main/resources</config.files.dir>
+ 		<doxygen.config.file>${basedir}/src/main/resources/Doxyfile</doxygen.config.file>
 	</properties>
 
 	<!-- search for the latest version of dependencies in http://mvnrepository.com -->
@@ -142,6 +143,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+ 				<groupId>com.soebes.maven.plugins.dmg</groupId>
+					<artifactId>doxygen-maven-plugin</artifactId>
+					<version>1.0.1</version>
+					<configuration>
+						<configurationFile>${doxygen.config.file}</configurationFile>
+					</configuration>
+ 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>

@@ -36,6 +36,13 @@ import termibooking.server.remote.TermiBookingFacade;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author      Joseba Eskubi Astobiza <joseba.eskubi@opendeusto.es>
+ * @version     1.0                                    
+ * @since       2017-05-18          
+ * <p>This program tests all the functionality of the RMI connection. It operates over the IBus and ITermiBooking remote interfaces. </p> 
+ *
+ */
 public class RMITest {
 	// Properties are hard-coded because we want the test to be executed without external interaction
 	
@@ -45,7 +52,7 @@ public class RMITest {
 		
 		final static Logger logger = LoggerFactory.getLogger(RMITest.class);
 		
-		private ITermiBooking termibooking;
+		private ITermiBooking termibooking;/**< This variable has any type of ITermiBooking */
 		@Rule public ContiPerfRule rule = new ContiPerfRule();
 		public static junit.framework.Test suite() {
 			return new JUnit4TestAdapter(RMITest.class);
@@ -115,7 +122,9 @@ public class RMITest {
 		
 		}
 		
-
+		/**
+		 * This method is executed before any JUnit test method is executed: It is annotated with the Before annotation. 
+		*/
 		@Before public void setUpClient() {
 			try {
 			System.setProperty("java.security.policy", "target\\test-classes\\security\\java.policy");
@@ -135,7 +144,9 @@ public class RMITest {
 			} 
 			
 		}
-		
+		/**
+		 * This method is executed 300 times through 10 threads. It register a new user in database. 
+		*/
 		@Test
 		@PerfTest(invocations=300, threads=10)
 		public void registerNewUserTest() {
@@ -152,7 +163,9 @@ public class RMITest {
 			 */
 			assertTrue( signed );
 		}
-		
+		/**
+		 * This method has to run in less than 1000 milliseconds. It removes a user from database
+		 */
 		@Test
 		@PerfTest(duration=1000)
 		public void removingUserTest() {
@@ -173,7 +186,9 @@ public class RMITest {
 			assertTrue( removed );
 		}
 		
-		
+		/**
+		 * This method is executed 500 times . It register a new user in database. It has to run in less than 150 milliseconds and with an average response time of 50 milliseconds
+		*/
 		@Test
 		@PerfTest(invocations = 500)
 		@Required(max = 150, average = 50)
@@ -190,7 +205,9 @@ public class RMITest {
 			}
 			assertTrue(reserved);
 		}
-
+		/**
+		 * After executing every JUnit test removes all data stored in database
+		 */
 		@After public  void deleteDatabase() {
 			PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 			PersistenceManager pm = pmf.getPersistenceManager();

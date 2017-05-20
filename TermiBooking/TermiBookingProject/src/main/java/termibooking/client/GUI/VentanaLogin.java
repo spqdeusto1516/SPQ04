@@ -67,11 +67,13 @@ public class VentanaLogin extends JFrame {
 		btnLogin.setBounds(171, 145, 89, 23);
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//If login OK
-				if (role == 1){
-					new HiloVentanaUser(tc, bc).start();
-				} else if (role == 2) {
-					new HiloVentanaAdmin().start();
+				boolean logged=tc.login(textField.getText(), textField_1.getText());
+				if(logged){
+					if (role == 1){
+						new HiloVentanaUser(tc, bc).start();
+					} else if (role == 2) {
+						new HiloVentanaAdmin(tc).start();
+					}
 				}
 			}
 		});
@@ -118,12 +120,13 @@ public class VentanaLogin extends JFrame {
 	}
 	
 	static class HiloVentanaAdmin extends Thread {
-		public HiloVentanaAdmin(){
-			
+		TermiBookingController tc;
+		public HiloVentanaAdmin(TermiBookingController tc){
+			this.tc=tc;
 		}
 		
 		public void run(){
-			new adminPage().getFrame().setVisible(true);
+			new adminPage(tc).getFrame().setVisible(true);
 		}
 	}
 	

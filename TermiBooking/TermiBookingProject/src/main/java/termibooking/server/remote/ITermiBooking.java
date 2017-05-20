@@ -28,4 +28,8 @@ public interface ITermiBooking extends Remote {
 	 * Removes a user from database give it's email 
 	 */
 	public boolean removeUser(String email) throws RemoteException;
+	/**
+	 * Gets the emails of all users in database
+	 */
+	public List<String> getUsers() throws RemoteException;
 }

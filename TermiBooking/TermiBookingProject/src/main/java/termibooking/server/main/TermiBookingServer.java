@@ -24,19 +24,28 @@ public class TermiBookingServer {
 	final static Logger logger = LoggerFactory.getLogger(TermiBookingServer.class);
 	private IDataDAO dao;
 	private User user;
-	Reservation reser;
+	private Reservation reser;
+	private List<User> users = new ArrayList<User>();
 
 	public TermiBookingServer() {
 		dao=new DataDAO();
 	}
 	
 	public synchronized boolean signIn(String email, String password){
-		user=new User(email, password);
-		boolean stored=dao.storeUser(user);
+		User u=new User(email, password);
+		boolean stored=dao.storeUser(u);
 		return stored;
 	}
 	public synchronized boolean login(String email, String password){
-		return true;
+		boolean logged = false;
+		users = dao.getUsers();
+		for(User u:users){
+			if(u.getEmail().equals(email)&&u.getPassword().equals(password)){
+				user=u;
+				logged=true;
+			}
+		}
+		return logged;
 	}
 	public synchronized boolean newReservation(Bus bus, int seats){
 		int remaining_seats=bus.getRemaining_seats();
@@ -83,5 +92,12 @@ public class TermiBookingServer {
 		return deleted;
 	}
 	
+	public synchronized List<String> getUsers(){
+		List<String> names = new ArrayList<String>();
+		for(User u:users){
+			names.add(u.getEmail());
+		}
+		return names;
+	}
 	
 }

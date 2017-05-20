@@ -1,8 +1,12 @@
 package termibooking.client.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import termibooking.client.remote.RMIServiceLocator;
 import termibooking.server.dao.DataDAO;
 import termibooking.server.dto.BusDTO;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,5 +56,23 @@ public class TermiBookingController {
 		}
 	}
 	
+	public boolean login(String email, String pass){
+		boolean logged = false;
+		try{
+			logged=rmi.getTermiBookingtService().login(email, pass);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return logged;
+	}
 	
+	public List<String> getUsers(){
+		List<String> users =new ArrayList<String>();
+		try{
+			users = rmi.getTermiBookingtService().getUsers();
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		return users;
+	}
 }

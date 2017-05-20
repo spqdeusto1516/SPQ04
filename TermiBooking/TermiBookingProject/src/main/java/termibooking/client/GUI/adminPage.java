@@ -19,14 +19,20 @@ import javax.swing.JButton;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JList;
+
+import termibooking.client.controller.TermiBookingController;
 
 
 public class adminPage {
 
 	private JFrame frame;
 	private JTextField textField;
+	List<String> users = new ArrayList<String>();
+	TermiBookingController tc;
 
 	/**
 	 * Launch the application.
@@ -35,8 +41,7 @@ public class adminPage {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					adminPage window = new adminPage();
-					window.frame.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -47,7 +52,8 @@ public class adminPage {
 	/**
 	 * Create the application.
 	 */
-	public adminPage() {
+	public adminPage(TermiBookingController tc) {
+		this.tc=tc;
 		initialize();
 	}
 
@@ -94,7 +100,13 @@ public class adminPage {
 		JList<String> list = new JList<String>();
 		list.setBounds(32, 47, 174, 191);
 		//list.setPreferredSize(new Dimension(209, 137));
-		list.setListData(new String[]{"Bus1", "Bus2", "Bus3", "aa", "aa", "aa", "aa", "aa", "aa", "aa", "aa", "aa", "aa", "aa", "ee"});
+		users=tc.getUsers();
+		String[] user = new String[users.size()];
+		for(int i = 0; i < users.size(); i++){
+			user[i] = users.get(i);
+		}
+		//String[] buses = busesString.toArray(new String[0]);
+		list.setListData(user);
 		scrollPane.setViewportView(list);
 		panel.add(scrollPane);
 		initializeList();

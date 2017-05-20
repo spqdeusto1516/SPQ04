@@ -2,6 +2,7 @@ package termibooking.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.List;
 
 import termibooking.server.data.Bus;
 import termibooking.server.dto.BusAssembler;
@@ -28,8 +29,8 @@ public class TermiBookingFacade extends UnicastRemoteObject implements ITermiBoo
 	}
 
 	public boolean login(String email, String password) throws RemoteException {
-		teser.login(email, password);
-		return false;
+		boolean logged=teser.login(email, password);
+		return logged;
 	}
 
 	public boolean newReservation(BusDTO bus, int seats) throws RemoteException {
@@ -50,6 +51,12 @@ public class TermiBookingFacade extends UnicastRemoteObject implements ITermiBoo
 		// TODO Auto-generated method stub
 		boolean removed=teser.removeUser(email);
 		return removed;
+	}
+
+	public List<String> getUsers() throws RemoteException {
+		// TODO Auto-generated method stub
+		List<String> emails = teser.getUsers();
+		return emails;
 	}
 
 }

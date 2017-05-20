@@ -204,6 +204,7 @@ private PersistenceManagerFactory pmf;
 		Transaction tx = pm.currentTransaction();
 	    User user=null;
 	    boolean deleted;
+	    	logger.info("Deleting a user from database");
 		try {
 
 	    	tx.begin();

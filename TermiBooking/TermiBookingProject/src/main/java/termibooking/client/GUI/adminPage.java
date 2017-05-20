@@ -87,7 +87,7 @@ public class adminPage {
 		JButton btnDelete = new JButton("Delete");
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				deleteUser(textField.getText());
+				tc.removeUser(textField.getText());
 			}
 			
 		});
@@ -122,11 +122,6 @@ public class adminPage {
 		int x = (int) (resolucion.getWidth())/2 - anchVentana/2;
 		int y = (int) (resolucion.getHeight())/2 - altVentana/2;
 		frame.setLocation(x, y);
-	}
-	
-	private void deleteUser(String text) {
-		// TODO implement delete method
-		initializeList();
 	}
 
 	private void initializeList() {

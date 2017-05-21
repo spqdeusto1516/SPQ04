@@ -177,7 +177,6 @@
 				</filesets>
 				</configuration>
 			</plugin>
-			
             <plugin>
  				<groupId>com.soebes.maven.plugins.dmg</groupId>
 					<artifactId>doxygen-maven-plugin</artifactId>

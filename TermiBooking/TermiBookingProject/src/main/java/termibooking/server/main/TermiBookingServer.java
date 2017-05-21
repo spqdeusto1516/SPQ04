@@ -50,7 +50,7 @@ public class TermiBookingServer {
 	public synchronized boolean newReservation(Bus bus, int seats){
 		int remaining_seats=bus.getRemaining_seats();
 		bus.setRemaining_seats(remaining_seats-seats);
-		//dao.updateBus(bus);
+		dao.deleteBus(bus.getCode());
 		Pay payment=new Pay();
 		payment.PayCreditCard(300, "5563645636473", user);
 		reser=new Reservation(bus, seats, user, payment);

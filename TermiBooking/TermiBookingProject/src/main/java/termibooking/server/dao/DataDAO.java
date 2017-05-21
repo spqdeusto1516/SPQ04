@@ -1,7 +1,6 @@
 package termibooking.server.dao;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 import javax.jdo.Extent;
@@ -15,6 +14,7 @@ import termibooking.server.data.Bus;
 import termibooking.server.data.Reservation;
 import termibooking.server.data.Station;
 import termibooking.server.data.User;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -226,5 +226,31 @@ private PersistenceManagerFactory pmf;
 	     }
 
 		return deleted;
+	}
+
+	public void deleteBus(String code) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		pm.getFetchPlan().setMaxFetchDepth(3);
+		Transaction tx = pm.currentTransaction();
+	    Bus bus=null;
+	    	logger.info("Deleting a bus from database");
+		try {
+
+	    	tx.begin();
+	    	Query<?> query = pm.newQuery("SELECT FROM " + Bus.class.getName() + " WHERE code == '" + code +"'");
+	    	query.setUnique(true);
+	    	bus = (Bus)query.execute();
+	    	pm.deletePersistent(bus);
+ 	    	tx.commit();
+	     } catch (Exception ex) {
+		   	logger.error("   $ Error retreiving an extent: " + ex.getMessage());
+	     } finally {
+		   	if (tx != null && tx.isActive()) {
+		   		tx.rollback();
+		 }
+				
+	   		pm.close();
+	     }
+		
 	}
 }
